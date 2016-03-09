@@ -196,12 +196,13 @@ body {
     font-size: 1rem;
     font-weight: 500;
 }
-.owl-prev:hover, .owl-next:hover, .owl-prev:focus, .owl-next:focus, .box-modal_close:hover, .box-modal_close:focus, .box-modal_next:hover, .box-modal_prev:hover, .box-modal_next:focus, .box-modal_prev:focus{
+.owl-prev:hover, .owl-next:hover, .owl-prev:focus, .owl-next:focus, .box-modal_close:hover, .box-modal_close:focus, .box-modal_next:hover, .box-modal_prev:hover, .box-modal_next:focus, .box-modal_prev:focus, .owl-prev:active, .owl-next:active, .box-modal_close:active, .box-modal_next:active, .box-modal_prev:active{
     box-shadow: 0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);
-}
-.owl-prev:active, .owl-next:active, .box-modal_close:active, .box-modal_next:active, .box-modal_prev:active{
     background: #cc7400;
 }
+/*.owl-prev:active, .owl-next:active, .box-modal_close:active, .box-modal_next:active, .box-modal_prev:active{
+    background: #cc7400;
+}*/
 .skills__list{
     padding-left: 3%;
     list-style: disc;
