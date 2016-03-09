@@ -345,10 +345,7 @@ body {
     .footer__text--copyright{
         text-align: left;
     }
-    .social__link{
-        transition: none;
-    }
-    .header__nav a{
+    .social__link, .header__nav a, .owl-prev, .owl-next, .box-modal_close, .box-modal_next, .box-modal_prev, .projects__item__bottom p{
         transition: none;
     }
 }
