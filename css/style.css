@@ -348,4 +348,7 @@ body {
     .social__link{
         transition: background-image none, background-color none;
     }
+    .header__nav a{
+        transition: border none, color none;
+    }
 }
