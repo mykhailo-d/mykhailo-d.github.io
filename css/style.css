@@ -345,7 +345,7 @@ body {
     .footer__text--copyright{
         text-align: left;
     }
-    .social__link, .header__nav, .owl-prev, .owl-next, .box-modal_close, .box-modal_next, .box-modal_prev, .projects__item__bottom p{
-        transition: none;
+    .social__link{
+        transition: background-image none, background-color none;
     }
 }
