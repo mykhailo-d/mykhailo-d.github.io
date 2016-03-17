@@ -101,7 +101,7 @@ body {
     border-radius: 4px;
     transition: background-image 0.3s, background-color 0.3s;
 }
-.social__link:hover, .social__link:focus{
+.social__link:hover, .social__link:focus, .social__link:active{
 	background-image: url(../img/contacts/contacts_hover.png);
 	background-color: #6BA534;
 }
