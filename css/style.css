@@ -310,7 +310,7 @@ body {
     text-decoration: none;
 }
 /* Media Queries */
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 767px){
 	.header__left, .header__right, .header__nav{
 		text-align: center;
 	}
