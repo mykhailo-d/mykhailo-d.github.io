@@ -245,13 +245,6 @@ body {
     color: rgb(66,66,66);
     text-transform: uppercase;
     cursor: pointer;
-    transition: background 0.3s;
-}
-.projects__item__bottom p:hover, .projects__item__bottom p:focus{
-    background: rgba(255,171,64,.3);
-}
-.projects__item__bottom p:active{
-    background: rgba(204,116,0,.8);
 }
 .projects__detailed{
     display: none;
