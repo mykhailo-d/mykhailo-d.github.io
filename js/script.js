@@ -1,8 +1,10 @@
 $(document).ready(function() {
-	var carousel = $("#projects_carousel");
+
+//Main page carousel call
+  var carousel = $("#projects_carousel");
 	$("#projects_carousel").owlCarousel({
 	  autoPlay : 3000,
-	  navigation : true,
+	  navigation : false,
 	  slideSpeed : 500,
 	  rewindSpeed : 500,
 	  pagination : false,
@@ -17,29 +19,47 @@ $(document).ready(function() {
         [1000, 3]
       ]
 	});
-    
-    $(".item").click(function(){
-       if ($(this).parent().parent().next().css("display") == "none"){
-           $(".projects__detailed").hide(500);
-           $(this).parent().parent().next().show(500);
-       }else{
-           $(".projects__detailed").hide(500);
-       }
-    });
-    
-    $(".modal_call").on("click", function(){
-        $(this).next(".modal_wrapper").children().eq(0).arcticmodal();
-	});
-    
-    $(".box-modal_next").on("click", function(){
-        $(this).parent().arcticmodal("close");
-        var bmn = $(this);
-        setTimeout(function(){bmn.parent().parent().next().next().children().eq(0).arcticmodal();}, 500);
-    });
-    $(".box-modal_prev").on("click", function(){
-        var bmp = $(this);
-        $(this).parent().arcticmodal("close");
-        setTimeout(function(){bmp.parent().parent().prev().prev().children().eq(0).arcticmodal();}, 500);
-    });
-    
+
+//Projects accordeon
+  var acc = $(".projects__item__bottom");
+  for (i=0; i<acc.length; i++) {
+    acc[i].onclick = function(){
+      $(this).toggleClass("active")
+      $(this).parent().next().stop().slideToggle(400);
+    }
+  }
+
+//Projects gallery call
+$('.gallery_wrap').each(function() {
+$(this).magnificPopup({
+    delegate: 'a',
+    type: 'image',
+    closeOnContentClick: false,
+    closeBtnInside: false,
+    mainClass: 'mfp-with-zoom mfp-img-mobile',
+    image: {
+      verticalFit: false
+    },
+    gallery: {
+      enabled: true
+    },
+    zoom: {
+      enabled: true,
+      duration: 300, // don't foget to change the duration also in CSS
+      opener: function(element) {
+        return element.find('img');
+      }
+    }
+
+  });
+});
+
+});
+
+$(window).load(function() {
+
+//Preloader call
+  $(".loader_inner").fadeOut();
+  $(".loader").delay(400).fadeOut("slow");
+
 });
