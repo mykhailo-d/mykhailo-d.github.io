@@ -1,14 +1,12 @@
 $(document).ready(function() {
 
 //Main page carousel call
-  var carousel = $("#projects_carousel");
-	$("#projects_carousel").owlCarousel({
+	$(".projects_carousel").owlCarousel({
 	  autoPlay : 3000,
-	  navigation : false,
 	  slideSpeed : 500,
 	  rewindSpeed : 500,
+    navigation : false,
 	  pagination : false,
-	  navigationText : ["Prev","Next"],
 	  autoHeight : true,
 	  mouseDrag : false,
 	  itemsCustom : [
