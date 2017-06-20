@@ -179,7 +179,7 @@ html .loader_inner {
     margin-bottom: 0;
 }
 .content__card:last-child{
-    margin-bottom: 0;
+    margin-top: 0;
 }
 .content__projects, .content__skills, .content__experience, .content__education, .content__about, .projects__list{
     padding-top: 15px;
