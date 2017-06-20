@@ -175,12 +175,6 @@ html .loader_inner {
 .content__card{
     background: #ddd;
 }
-.content__card:first-child{
-    margin-bottom: 0;
-}
-.content__card:last-child{
-    margin-top: 0;
-}
 .content__projects, .content__skills, .content__experience, .content__education, .content__about, .projects__list{
     padding-top: 15px;
     padding-bottom: 15px;
